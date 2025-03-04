@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52810" started-at="2019-01-17T17:53:00Z" finished-at="2019-01-17T17:53:53Z">
+  <suite name="Default suite" duration-ms="155571" started-at="2019-01-18T17:37:43Z" finished-at="2019-01-18T17:40:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52810" started-at="2019-01-17T17:53:00Z" finished-at="2019-01-17T17:53:53Z">
+    <test name="Default test" duration-ms="155571" started-at="2019-01-18T17:37:43Z" finished-at="2019-01-18T17:40:18Z">
       <class name="com.AutomationTalks.demoProject1.TestClass1">
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="launchDriver" is-config="true" duration-ms="3324" started-at="2019-01-17T17:53:00Z" finished-at="2019-01-17T17:53:03Z">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="launchDriver" is-config="true" duration-ms="62238" started-at="2019-01-18T17:37:43Z" finished-at="2019-01-18T17:38:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDriver -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="Test1" duration-ms="12510" started-at="2019-01-17T17:53:03Z" finished-at="2019-01-17T17:53:16Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="Test1" duration-ms="24687" started-at="2019-01-18T17:38:45Z" finished-at="2019-01-18T17:39:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="quit" is-config="true" duration-ms="79" started-at="2019-01-17T17:53:16Z" finished-at="2019-01-17T17:53:16Z">
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="quit" is-config="true" duration-ms="129" started-at="2019-01-18T17:39:10Z" finished-at="2019-01-18T17:39:10Z">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="launchDriver" is-config="true" duration-ms="1620" started-at="2019-01-17T17:53:16Z" finished-at="2019-01-17T17:53:17Z">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="launchDriver" is-config="true" duration-ms="1842" started-at="2019-01-18T17:39:10Z" finished-at="2019-01-18T17:39:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDriver -->
-        <test-method status="PASS" signature="Test2()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="Test2" duration-ms="15013" started-at="2019-01-17T17:53:17Z" finished-at="2019-01-17T17:53:32Z">
+        <test-method status="PASS" signature="Test2()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="Test2" duration-ms="27833" started-at="2019-01-18T17:39:12Z" finished-at="2019-01-18T17:39:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="quit" is-config="true" duration-ms="73" started-at="2019-01-17T17:53:32Z" finished-at="2019-01-17T17:53:32Z">
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="quit" is-config="true" duration-ms="84" started-at="2019-01-18T17:39:39Z" finished-at="2019-01-18T17:39:40Z">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="launchDriver" is-config="true" duration-ms="1607" started-at="2019-01-17T17:53:32Z" finished-at="2019-01-17T17:53:34Z">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="launchDriver" is-config="true" duration-ms="1467" started-at="2019-01-18T17:39:40Z" finished-at="2019-01-18T17:39:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDriver -->
-        <test-method status="FAIL" signature="Test3()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="Test3" duration-ms="15141" started-at="2019-01-17T17:53:34Z" finished-at="2019-01-17T17:53:49Z">
+        <test-method status="FAIL" signature="Test3()[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="Test3" duration-ms="22980" started-at="2019-01-18T17:39:41Z" finished-at="2019-01-18T17:40:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [AutomationTalks - Learn Automation Testing] but found [Expected title]]]>
@@ -94,7 +94,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test3 -->
-        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="quit" is-config="true" duration-ms="3381" started-at="2019-01-17T17:53:49Z" finished-at="2019-01-17T17:53:53Z">
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.AutomationTalks.demoProject1.TestClass1@52f759d7]" name="quit" is-config="true" duration-ms="14157" started-at="2019-01-18T17:40:04Z" finished-at="2019-01-18T17:40:18Z">
           <params>
             <param index="0">
               <value>
