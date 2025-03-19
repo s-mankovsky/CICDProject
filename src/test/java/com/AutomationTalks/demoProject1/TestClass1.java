@@ -3,6 +3,7 @@ package com.AutomationTalks.demoProject1;
 import net.rcarz.jiraclient.JiraException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
@@ -20,12 +21,11 @@ public class TestClass1 {
 
     @BeforeMethod
     public void launchDriver() throws MalformedURLException {
-        DesiredCapabilities dc;
-        dc = DesiredCapabilities.chrome();
-        dc.setBrowserName("chrome");
-        dc.setPlatform(Platform.MAC);
+        ChromeOptions options = new ChromeOptions();
+//        dc.setBrowserName("chrome");
+//        dc.setPlatform(Platform.MAC);
         System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/133.0.6943.141/chromedriver-mac-arm64/chromedriver");
-        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), dc);
+        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
