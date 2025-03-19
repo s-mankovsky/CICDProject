@@ -28,7 +28,7 @@ public class TestClass1 {
         driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), dc);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().window().fullscreen();
+//        driver.manage().window().fullscreen();
     }
 
     @Test
