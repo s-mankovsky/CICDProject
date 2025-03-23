@@ -3,6 +3,7 @@ package com.AutomationTalks.demoProject1;
 import net.rcarz.jiraclient.JiraException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -25,8 +26,11 @@ public class TestClass1 {
 //        options.setHeadless(true);
         System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/133.0.6943.141/chromedriver-mac-arm64/chromedriver");
 
+        //Setup for Jenkins
+        driver = new ChromeDriver(options);
+
         //Selenium Grid hub address
-        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
+//        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -46,7 +50,7 @@ public class TestClass1 {
     @Test
     public void Test3() {
         driver.navigate().to("https://automationtalks.com/");
-        System.out.println("Test 2 title is " + driver.getTitle());
+        System.out.println("Test 3 title is " + driver.getTitle());
     }
 
     @AfterMethod
