@@ -22,12 +22,12 @@ public class TestClass1 {
 
     @BeforeMethod
     public void launchDriver() throws MalformedURLException {
-        ChromeOptions options = new ChromeOptions();
+//        ChromeOptions options = new ChromeOptions();
 //        options.setHeadless(true);
         System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/133.0.6943.141/chromedriver-mac-arm64/chromedriver");
 
         //Setup for Jenkins
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
 
         //Selenium Grid hub address
 //        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
