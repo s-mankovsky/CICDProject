@@ -1,11 +1,8 @@
 package com.AutomationTalks.demoProject1;
 
 import net.rcarz.jiraclient.JiraException;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -22,15 +19,16 @@ public class TestClass1 {
 
     @BeforeMethod
     public void launchDriver() throws MalformedURLException {
-//        ChromeOptions options = new ChromeOptions();
-//        options.setHeadless(true);
         System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/133.0.6943.141/chromedriver-mac-arm64/chromedriver");
 
-        //Setup for Jenkins
-        driver = new ChromeDriver();
+//        //Setup for Jenkins
+//        driver = new ChromeDriver();
 
-        //Selenium Grid hub address
-//        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
+        //Setup for Selenium Grid
+        ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
+        //Hub address
+        driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
