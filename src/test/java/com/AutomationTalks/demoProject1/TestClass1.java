@@ -24,6 +24,8 @@ public class TestClass1 {
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
         System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/133.0.6943.141/chromedriver-mac-arm64/chromedriver");
+
+        //Selenium Grid hub address
         driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
