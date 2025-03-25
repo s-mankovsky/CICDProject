@@ -26,7 +26,7 @@ public class TestClass1 {
 
         //Setup for Selenium Grid
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(false);
+        options.setHeadless(true);
         //Hub address
         driver = new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
 
