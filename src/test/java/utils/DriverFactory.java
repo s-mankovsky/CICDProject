@@ -15,21 +15,21 @@ public class DriverFactory {
     private static final String AUTOMATE_KEY = "mayruWDpJxScTF67zdh6";
     private static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
-    public static WebDriver createDriver(String resourceType) throws MalformedURLException {
+    public static WebDriver createDriver(ResourceType resourceType) throws MalformedURLException {
         switch (resourceType) {
-            case "jenkins":
+            case JENKINS:
                 //Setup for Jenkins
                 System.setProperty("webdriver.chrome.driver", "/opt/homebrew/Caskroom/chromedriver/133.0.6943.141/chromedriver-mac-arm64/chromedriver");
                 return new ChromeDriver();
 
-            case "selenium_grid":
+            case SELENIUM_GRID:
                 //Setup for Selenium Grid
                 ChromeOptions options = new ChromeOptions();
                 options.setHeadless(true);
                 //Hub address
                 return new RemoteWebDriver(new URL("http://192.168.0.185:4444"), options);
 
-            case "browser_stack":
+            case BROWSER_STACK:
                 //Setup for Browserstack
                 DesiredCapabilities dc = new DesiredCapabilities();
                 dc.setCapability("browser", "Firefox");

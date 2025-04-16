@@ -14,7 +14,8 @@ public class WebDriverManager {
 
     public static void initializeDriver(String resourceType) throws MalformedURLException {
         if (driver == null) {
-            driver = DriverFactory.createDriver(resourceType);
+            ResourceType resourceTypeValue = ResourceType.valueOf(resourceType.toUpperCase());
+            driver = DriverFactory.createDriver(resourceTypeValue);
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
     }
